@@ -1,0 +1,97 @@
+<div class="panel-content">
+    <div class="object-container">
+        <h2 class="secondary-title">
+            Geographic use
+        </h2>
+        <div class="panel-control-container gob-calendar gob-single-filter">
+            <label>Select period</label>
+            <div class="control-calendar">
+                <span class="ti-calendar" aria-hidden="true"></span>
+                <input type="text" id="geographic-date-range-picker" class="calendar-value" />
+            </div>
+            <div class="clearfix"></div>
+        </div>
+    </div>
+
+    <div class="panel-content">
+
+        <div">
+            <div class="row">
+                <div class="loader-normal">
+                    <h2 class="secondary-title gob-section-title">
+                        Top downloads via goBIM
+                    </h2>
+                    <div id="gobim-map-container" class="col-md-12" style="height: 400px; width: 50%; padding-left: 250px;"></div>
+                    <table class="stats-table">
+                        <thead>
+                            <tr>
+                                <th>
+
+                                </th>
+                                <th class="main-column">
+                                    Country
+                                </th>
+                                <th colspan="2" class="support-column">
+                                    Downloads
+                                </th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td>
+                                    1.
+                                </td>
+                                <td>
+                                    Norway
+                                </td>
+                                <td class="indicator-column">
+                                    17
+                                </td>
+                                <td class="indicator-visual-column">
+                                    <div class="visual-indicator"></div>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>
+                                    2.
+                                </td>
+                                <td>
+                                    Bulgaria
+                                </td>
+                                <td class="indicator-column">
+                                    17
+                                </td>
+                                <td class="indicator-visual-column">
+                                    <div class="visual-indicator"></div>
+                                </td>
+                            </tr>
+                        </tbody>
+                        <tfoot>
+                            <tr>
+                                <td class="column-footer" colspan="4">
+                                    <a href="#">Export table</a>
+                                </td>
+                            </tr>
+                        </tfoot>
+                    </table>
+                </div>
+            </div>
+    </div>
+</div>
+
+<script id="tableDataRow" type="text/html">
+    <tr>
+        <td>
+            {{Order}}.
+        </td>
+        <td>
+            {{Country}}
+        </td>
+        <td class="indicator-column">
+            {{Number}}
+        </td>
+        <td class="indicator-visual-column">
+            <div class="visual-indicator" style="width:{{Width}}%"></div>
+        </td>
+    </tr>
+</script>
